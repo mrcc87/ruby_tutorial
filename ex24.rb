@@ -23,7 +23,7 @@ puts "---------------"
 five = 10 - 2 + 3 - 6
 puts "This should be #{five}."
 
-
+# This method will return 3 variables.
 def secret_formula(started)
   jelly_beans = started * 500
   jars = jelly_beans / 1000
@@ -31,10 +31,15 @@ def secret_formula(started)
   return jelly_beans, jars, crates
 end
 
+# The variable passed to the method.
 start_point = 10000
+
+# Invocation of the method and storing to 3 new variables.
 beans, jars, crates = secret_formula(start_point)
 
+# This will print the variable passed to the method and the 3 varibles which were returned.
 puts "With a starting point of: #{start_point}"
 puts "We'd have #{beans} beans, #{jars} jars, and #{crates} crates."
 
+# start_point will be divided by 10 and stored.
 start_point = start_point / 10
