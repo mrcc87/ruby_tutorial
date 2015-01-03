@@ -26,7 +26,6 @@ def bear_room
   bear_moved = false
 
   while true
-    puts bear_moved
     print ">"
     choice = $stdin.gets.chomp
     
