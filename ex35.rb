@@ -26,6 +26,7 @@ def bear_room
   bear_moved = false
 
   while true
+    puts bear_moved
     print ">"
     choice = $stdin.gets.chomp
     
@@ -34,7 +35,7 @@ def bear_room
     elsif choice == "taunt bear" && !bear_moved
       puts "The bear has moved from the door. You can go through it now."
       bear_moved = true
-    elsif choice = "taunt bear" && bear_moved
+    elsif choice == "taunt bear" && bear_moved
       dead("The bear gets pissed off and chews you leg off.")
     elsif choice == "open door" && bear_moved
       gold_room
